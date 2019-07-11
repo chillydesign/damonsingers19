@@ -462,6 +462,13 @@ header nav ul li a.branding:hover {
   filter: blur(3px)
 }
 
+@media (min-width: 768px) {
+  .blurred_body {
+    -webkit-filter: blur(0px);
+    filter: blur(0px)
+  }
+}
+
 #feature img {
   padding: 3px;
   border: 4px solid #003c7f;
