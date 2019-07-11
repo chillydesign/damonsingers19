@@ -45,7 +45,7 @@ get_header(); ?>
 	<?php if ($gallery) : ?>
 		<?php foreach($gallery as $image) : ?>
 		<a href="<?php echo $image['url']; ?>" rel="lightbox[8]">
-		<img class="alignnone size-medium wp-image-61" title="<?php echo $image['name']; ?>" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['name']; ?>"  />
+		<img class="alignnone size-medium wp-image-61" title="<?php echo $image['name']; ?>" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['name']; ?>"  style="height: 130px;width: auto;" />
 		</a>
 		<?php endforeach; ?>
 	<?php endif; ?>
