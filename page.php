@@ -38,31 +38,18 @@ get_header(); ?>
 
 	<?php endwhile; ?>
 
-	<?php if(is_front_page()) : ?>
+
 
 
 	<?php	$gallery = get_field('gallery'); ?>
-
-
 	<?php if ($gallery) : ?>
-
-
 		<?php foreach($gallery as $image) : ?>
-<?php var_dump($image); ?>
-	<?php endforeach; ?>
+		<a href="<?php echo $image['url']; ?>" rel="lightbox[8]">
+		<img class="alignnone size-medium wp-image-61" title="<?php echo $image['name']; ?>" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['name']; ?>"  />
+		</a>
+		<?php endforeach; ?>
 	<?php endif; ?>
 
-		<a href="https://damonsingers.co.uk/wp-content/uploads/2012/02/Damons-pic-with-title.jpg" rel="lightbox[8]">
-			<img class="alignnone size-medium wp-image-61" title="Damons pic with title" src="https://damonsingers.co.uk/wp-content/uploads/2012/02/Damons-pic-with-title-300x211.jpg" alt="" width="170" height="211" />
-		</a>
-		<a href="https://damonsingers.co.uk/wp-content/uploads/2012/02/Damons1262.jpg" rel="lightbox[8]">
-			<img class="alignnone size-medium wp-image-59" title="Damons1262" src="https://damonsingers.co.uk/wp-content/uploads/2012/02/Damons1262-300x214.jpg" alt="" width="170" height="214" />
-		</a>
-		<a href="https://damonsingers.co.uk/wp-content/uploads/2012/02/DSMar10_dsing.jpg" rel="lightbox[8]">
-			<img class="alignnone size-medium wp-image-58" title="DSMar10_dsing" src="https://damonsingers.co.uk/wp-content/uploads/2012/02/DSMar10_dsing-300x225.jpg" alt="" width="170" height="225" />
-		</a>
-
-	<?php endif;?>
 
 
 
