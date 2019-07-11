@@ -31,7 +31,7 @@ q:before, q:after { content:''}
 .clearfix:before,.clearfix:after,.row:before,.row:after{display:table;content:" "}
 .clearfix:after,.row:after{clear:both}
 .container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
-@media (min-width: 768px){.container{width:750px}
+@media (min-width: 768px){.container{width:750px}}
 @media (min-width: 992px){.container{width:970px}}
 @media (min-width: 1200px){.container{width:1170px}}
 
@@ -119,7 +119,7 @@ pre code {padding:10px;font-size:1.5em;display:block;display:block;margin:5px 0 
 #content a img.aligncenter { margin:auto;display:block;width: 100%;}
 .wp-caption { border:1px solid #666; text-align:center; background:#ccc; padding:10px; margin:10px }
 
-.post-edit-link , .continuereading {background:#ececec;padding:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;font-size:80%;position:absolute;right:0px;bottom:-10px;font-weight:bold}
+.post-edit-link , .continuereading {background:#ececec;padding:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;font-size:80%;right:0px;bottom:-10px;font-weight:bold}
 .continuereading {position:relative}
 .meta {font-style:italic; color:#666}
 
