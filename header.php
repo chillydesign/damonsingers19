@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="<?php bloginfo('charset'); ?>"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php
     /*
      * Print the <title> tag based on what is being viewed.
@@ -13,10 +14,7 @@
 
     ?></title>
     <link rel="profile" href="http://gmpg.org/xfn/11"/>
-
-
     <link rel="icon" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.png" type="image/x-icon">
-
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
     <?php wp_head(); ?>
   </head>
