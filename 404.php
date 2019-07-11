@@ -9,10 +9,10 @@
 
 get_header(); ?>
 
-
-	<div id="content">
-				<h1><?php _e( 'Not Found', 'twentyten' ); ?></h1>
-				<p><?php _e( 'Apologies, but the page you requested could not be found. Perhaps searching will help.', 'twentyten' ); ?></p>
+<div class="row">
+	<div id="content" class="col-sm-8">
+				<h1><?php _e('Not Found', 'twentyten'); ?></h1>
+				<p><?php _e('Apologies, but the page you requested could not be found. Perhaps searching will help.', 'twentyten'); ?></p>
 				<?php get_search_form(); ?>
 	</div><!-- END OF CONTENT -->
 	<script type="text/javascript">
@@ -21,4 +21,5 @@ get_header(); ?>
 	</script>
 
 <?php get_sidebar(); ?>
+</div> <!--  end of row -->
 <?php get_footer(); ?>

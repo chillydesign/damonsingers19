@@ -19,20 +19,22 @@ get_header(); ?>
 
 
 	<?php if ( is_front_page() ) { ?>
-	
-	
+
+
 		<?php /*<div id="feature">
 			<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/feature.jpg" alt="" />
 		</div> */ ?>
 		<h2><?php the_title(); ?></h2>
-	<?php } else { ?>	
+	<?php } else { ?>
 		<h1><?php the_title(); ?></h1>
-	<?php } ?>				
+	<?php } ?>
 	<p><?php edit_post_link( __( 'Edit this page', 'twentyten' ), '', '' ); ?></p>
-<div id="content">
-		
+
+	<div class="row">
+<div id="content" class="col-sm-8">
+
 		<?php the_content(); ?>
-		
+
 
 	<?php endwhile; ?>
 
@@ -50,14 +52,17 @@ get_header(); ?>
 
 	<?php endif;?>
 
-	
-	
 
-	
-	
-	
-	
+
+
+
+
+
+
 </div><!-- END OF CONTENT -->
 
 <?php get_sidebar(); ?>
+
+ </div> <!--end of row -->
+
 <?php get_footer(); ?>

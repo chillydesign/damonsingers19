@@ -1,4 +1,4 @@
-<div id="sidebar">
+<div id="sidebar" class="col-sm-4">
 <?php if(is_page(5)/* || is_page(4)*/): //if about or contact page ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 		<div id="map">
@@ -9,11 +9,11 @@
 
 
 
-<?php 
+<?php
 $args = array(	'post_type'=>'concert',
 				'posts_per_page'=>5,
 				'orderby'=>'date',
-				'order'=>'DESC'				
+				'order'=>'DESC'
 			);
 query_posts($args);
 $datearray= array();
@@ -36,7 +36,7 @@ if ($date > time() ) {
 };
 
 $i++;
-endwhile; endif; 
+endwhile; endif;
 
 $al = array_keys($datearray, min($datearray));
 $day =  date("d", $datearray[$al[0]]);
@@ -53,9 +53,9 @@ $month =  date("M", $datearray[$al[0]]);
 	<h4>Our Next Concert</h4>
 	<p><strong><?php echo $titlearray[$al[0]];?></strong><br/>
 	<?php echo $contentarray[$al[0]]; ?></p>
-	
+
 	<p><a href="/concerts">See more upcoming concerts....</a></p>
-	
+
 	<div class="clear"></div>
 </div>
 <div id="latestnews" style="padding:15px">
@@ -63,7 +63,7 @@ $month =  date("M", $datearray[$al[0]]);
 	<?php query_posts('post_type=post&posts_per_page=2');?>
 	<h3>Latest News</h3>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		
+
 		<p style="margin-bottom:0px"><strong><?php the_title();?></strong></p>
 		<?php the_excerpt();?>
 	<?php endwhile; endif;?>
@@ -72,9 +72,3 @@ $month =  date("M", $datearray[$al[0]]);
 
 
 </div>
-
-
-
-
-
-<div class="clear"></div>

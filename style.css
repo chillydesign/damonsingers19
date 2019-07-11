@@ -13,7 +13,7 @@ Author URI: http://charles-harvey.co.uk
 
 /* Global reset */
 /* Based upon 'reset.css' in the Yahoo! User Interface Library: http://developer.yahoo.com/yui */
-*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td { margin:0; padding:0 }
+ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td { margin:0; padding:0 }
 table { border-collapse:collapse; border-spacing:0 }
 fieldset, img { border:0 }
 address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal }
@@ -22,12 +22,62 @@ caption, th { text-align:left }
 h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
 q:before, q:after { content:''}
 
+* {box-sizing:border-box}
+
+@media (min-width: 768px){}
+@media (min-width: 992px){}
+@media (min-width: 1200px){}
+
+.clearfix:before,.clearfix:after,.row:before,.row:after{display:table;content:" "}
+.clearfix:after,.row:after{clear:both}
+.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+@media (min-width: 768px){.container{width:750px}
+@media (min-width: 992px){.container{width:970px}}
+@media (min-width: 1200px){.container{width:1170px}}
+
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px
+}
+
+.col-sm-4, .col-sm-8  {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px
+}
+
+
+@media (min-width: 768px) {
+ .col-sm-4,  .col-sm-8{
+    float: left
+  }
+  .col-sm-8 {
+    width: 66.66666667%
+  }
+
+
+  .col-sm-4 {
+    width: 33.33333333%
+  }
+
+}
+
+
+
+@media (min-width: 768px){}
+@media (min-width: 992px){}
+@media (min-width: 1200px){}
+
+
+
 /* Global reset-RESET */
 /* The below restores some sensible defaults */
 strong { font-weight:bold }
 em { font-style:italic }
 a img { border:none } /* Gets rid of IE's blue borders */
-
+img {max-width: 100%;height: auto}
 h1, h2, h3, h4, h5, h6 { } /* This helps to identify headings at the initial build stage, so I thought it'd be useful to have it */
 .alert { background:red; color:white } /* 'alert' has a basic style, since it's useful to have it standing out for testing purposes.*/
 
@@ -81,14 +131,8 @@ body {background:#fff;font:300 62.5% 'Yanone Kaffeesatz', sans-serif;color:#333;
 /*NEW BLUE COLOR #003c7f;*/
 /*OLD BLUE COLOR #3b4767;*/
 
-#page-wrap {width:100%;margin:auto}
-#main {position:relative}
 
-@media (min-width: 768px) {
-    #page-wrap {
-        width:960px;
-    }
-}
+#main { }
 
 
 
@@ -112,16 +156,6 @@ body {background:#fff;font:300 62.5% 'Yanone Kaffeesatz', sans-serif;color:#333;
 
 
 #feature img {padding:3px;border:4px solid #003c7f;margin:0 0 20px }
-
-#content {width: 100%;padding:20px;}
-/*sidebar*/
-#sidebar {width: 100%;}
-
-@media (min-width: 768px) {
-    #content {float:left;width:630px;padding: 0;}
-    /*sidebar*/
-    #sidebar {float:right;width:300px}
-}
 
 
 .post {margin: 20px 0 0 ;border-bottom:1px dotted #ddd}

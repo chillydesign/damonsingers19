@@ -10,7 +10,8 @@
 get_header(); ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-	<div id="content">
+	<div class="row">
+	<div id="content" class="col-sm-8">
 					<?php previous_post_link( '%link', '' . _x( '&larr;', 'Previous post link', 'twentyten' ) . ' %title' ); ?>
 					<?php next_post_link( '%link', '%title ' . _x( '&rarr;', 'Next post link', 'twentyten' ) . '' ); ?>
 
@@ -40,4 +41,5 @@ get_header(); ?>
 <?php endwhile; // end of the loop. ?>
 </div><!-- END OF CONTENT -->
 <?php get_sidebar(); ?>
+</div> <!--  end of row -->
 <?php get_footer(); ?>
