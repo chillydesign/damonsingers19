@@ -2,7 +2,7 @@
 <?php if(is_page(5)/* || is_page(4)*/): //if about or contact page ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 		<div id="map">
-		<iframe width="286" height="440" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="//maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=White+Hill+Centre+chesham&amp;aq=&amp;sll=53.800651,-4.064941&amp;sspn=17.256447,41.132813&amp;ie=UTF8&amp;hq=White+Hill+Centre+chesham&amp;hnear=&amp;radius=15000&amp;t=m&amp;cid=15441121915653511&amp;ll=51.709906,-0.610514&amp;spn=0.009041,0.012488&amp;z=15&amp;output=embed"></iframe>
+		<iframe  style="width:100%" width="100%" height="440" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="//maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=White+Hill+Centre+chesham&amp;aq=&amp;sll=53.800651,-4.064941&amp;sspn=17.256447,41.132813&amp;ie=UTF8&amp;hq=White+Hill+Centre+chesham&amp;hnear=&amp;radius=15000&amp;t=m&amp;cid=15441121915653511&amp;ll=51.709906,-0.610514&amp;spn=0.009041,0.012488&amp;z=15&amp;output=embed"></iframe>
 		</div>
 <?php endwhile; ?>
 <?php endif; ?>
