@@ -448,6 +448,10 @@ header nav ul li a.branding:hover {
     color: #005d9a
   }
 
+  #navigation_menu a:hover {
+    color: white
+  }
+
   header nav ul li {
     display: inline-block
   }
