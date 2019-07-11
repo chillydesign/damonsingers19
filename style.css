@@ -95,7 +95,7 @@ p, label {margin:0 0 20px;font-size:1.4em;line-height:1.5em;font-weight:normal}
 #content ol li {margin:0 0 5px 20px;list-style:decimal;font-size:1.3em;font-weight:normal}
 li li,p li, li p, li h3, li h4 {font-size:1em}
 #content ul, #content ol {margin:0 0 20px 0}
-#content a img {border:double 6px #003c7f;margin:3px 18px 20px 0;height:auto}
+#content a img {border:double 6px #003c7f;margin:3px 0 20px 0;height:auto;width:100%}
 .home #content a img {}
 input {padding:10px;font-size:1em}
 
@@ -132,7 +132,7 @@ body {background:#fff;font:300 62.5% 'Yanone Kaffeesatz', sans-serif;color:#333;
 /*OLD BLUE COLOR #3b4767;*/
 
 
-#main { }
+#main {  margin-bottom: 20px}
 
 
 
@@ -142,8 +142,8 @@ body {background:#fff;font:300 62.5% 'Yanone Kaffeesatz', sans-serif;color:#333;
 /*menu*/
 
 #header  ul {text-align:right;margin:16px 0 0}
-#header  ul li {display:inline;}
-#header  ul li a {padding:0 10px;font-weight:bold;font-size:2em}
+#header  ul li {display:inline-block;}
+#header  ul li a {padding: 10px 10px;font-weight:bold;font-size:2em;display: inline-block;}
 #header a:link, #header a:visited {color:#003c7f}
 #header a:hover {color:#003c7f}
 
