@@ -40,6 +40,18 @@ get_header(); ?>
 
 	<?php if(is_front_page()) : ?>
 
+
+	<?php	$gallery = get_field('gallery'); ?>
+
+
+	<?php if ($gallery) : ?>
+
+
+		<?php foreach($gallery as $image) : ?>
+<?php var_dump($image); ?>
+	<?php endforeach; ?>
+	<?php endif; ?>
+
 		<a href="https://damonsingers.co.uk/wp-content/uploads/2012/02/Damons-pic-with-title.jpg" rel="lightbox[8]">
 			<img class="alignnone size-medium wp-image-61" title="Damons pic with title" src="https://damonsingers.co.uk/wp-content/uploads/2012/02/Damons-pic-with-title-300x211.jpg" alt="" width="170" height="211" />
 		</a>
