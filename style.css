@@ -95,7 +95,7 @@ p, label {margin:0 0 20px;font-size:1.4em;line-height:1.5em;font-weight:normal}
 #content ol li {margin:0 0 5px 20px;list-style:decimal;font-size:1.3em;font-weight:normal}
 li li,p li, li p, li h3, li h4 {font-size:1em}
 #content ul, #content ol {margin:0 0 20px 0}
-#content a img {border:double 6px #003c7f;margin:3px 0 20px 0;height:auto;width:100%}
+#content a img {border:double 6px #003c7f;margin:3px 0 20px 0;height:auto;}
 .home #content a img {}
 input {padding:10px;font-size:1em}
 
@@ -119,7 +119,7 @@ pre code {padding:10px;font-size:1.5em;display:block;display:block;margin:5px 0 
 #content a img.aligncenter { margin:auto;display:block;width: 100%;}
 .wp-caption { border:1px solid #666; text-align:center; background:#ccc; padding:10px; margin:10px }
 
-img.size-full {max-width: 100%; height: auto;}
+img.size-full {max-width: 100%; height: auto;width: 100%;}
 
 .post-edit-link , .continuereading {background:#ececec;padding:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;font-size:80%;right:0px;bottom:-10px;font-weight:bold}
 .continuereading {position:relative}
