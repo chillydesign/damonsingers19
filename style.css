@@ -441,7 +441,7 @@ header nav ul li a.branding:hover {
   }
 
   #navigation_menu a {
-    padding: 20px 20px 0
+    padding: 10px 13px;
   }
 
   #navigation_menu a:link, #navigation_menu a:visited, #navigation_menu a:active {
