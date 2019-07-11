@@ -6,214 +6,678 @@ Version: 0.1
 Author: Charles Harvey
 Author URI: http://charles-harvey.co.uk
 */
-
-
 /* RESET */
 /* ----------------------------------------- */
-
 /* Global reset */
 /* Based upon 'reset.css' in the Yahoo! User Interface Library: http://developer.yahoo.com/yui */
- html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td { margin:0; padding:0 }
-table { border-collapse:collapse; border-spacing:0 }
-fieldset, img { border:0 }
-address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal }
-ol, ul, li { list-style:none }
-caption, th { text-align:left }
-h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
-q:before, q:after { content:''}
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td {
+  margin: 0;
+  padding: 0
+}
 
-* {box-sizing:border-box}
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
 
-@media (min-width: 768px){}
-@media (min-width: 992px){}
-@media (min-width: 1200px){}
+fieldset, img {
+  border: 0
+}
 
-.clearfix:before,.clearfix:after,.row:before,.row:after{display:table;content:" "}
-.clearfix:after,.row:after{clear:both}
-.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
-@media (min-width: 768px){.container{width:750px}}
-@media (min-width: 992px){.container{width:970px}}
-@media (min-width: 1200px){.container{width:1170px}}
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal
+}
 
+ol, ul, li {
+  list-style: none
+}
+
+caption, th {
+  text-align: left
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal
+}
+
+q:before, q:after {
+  content: ''
+}
+
+* {
+  box-sizing: border-box
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+.clearfix:before, .clearfix:after, .row:before, .row:after {
+  display: table;
+  content: " "
+}
+
+.clearfix:after, .row:after {
+  clear: both
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px
+  }
+}
 
 .row {
   margin-right: -15px;
   margin-left: -15px
 }
 
-.col-sm-4, .col-sm-8  {
+.col-sm-4, .col-sm-8, .col-sm-3, .col-sm-9 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px
 }
 
-
 @media (min-width: 768px) {
- .col-sm-4,  .col-sm-8{
+  .col-sm-4, .col-sm-8, .col-sm-3, .col-sm-9 {
     float: left
   }
+
   .col-sm-8 {
     width: 66.66666667%
   }
-
 
   .col-sm-4 {
     width: 33.33333333%
   }
 
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  .col-sm-3 {
+    width: 25%;
+  }
 }
 
+@media (min-width: 768px) {}
 
+@media (min-width: 992px) {}
 
-@media (min-width: 768px){}
-@media (min-width: 992px){}
-@media (min-width: 1200px){}
-
-
+@media (min-width: 1200px) {}
 
 /* Global reset-RESET */
 /* The below restores some sensible defaults */
-strong { font-weight:bold }
-em { font-style:italic }
-a img { border:none } /* Gets rid of IE's blue borders */
+strong {
+  font-weight: bold
+}
 
-h1, h2, h3, h4, h5, h6 { } /* This helps to identify headings at the initial build stage, so I thought it'd be useful to have it */
-.alert { background:red; color:white } /* 'alert' has a basic style, since it's useful to have it standing out for testing purposes.*/
+em {
+  font-style: italic
+}
 
+a img {
+  border: none
+}
 
-h1 ,h2, h3, h4 {color:#003c7f;margin:0 0 10px;font-weight:bold;text-transform:uppercase}
-h1, h2 {font-size:4em}
-h3 {font-size:3em;font-weight:bold;letter-spacing:1px;}
-h4 {font-size:2.3em;font-weight:bold;margin-bottom:5px}
+/* Gets rid of IE's blue borders */
+h1, h2, h3, h4, h5, h6 {}
 
+/* This helps to identify headings at the initial build stage, so I thought it'd be useful to have it */
+.alert {
+  background: red;
+  color: white
+}
 
+/* 'alert' has a basic style, since it's useful to have it standing out for testing purposes.*/
+h1, h2, h3, h4 {
+  color: #003c7f;
+  margin: 0 0 10px;
+  font-weight: bold;
+  text-transform: uppercase
+}
 
-p, #content li {font-family:'Lucida Sans', Tahoma, sans-serif}
-p, label {margin:0 0 20px;font-size:1.4em;line-height:1.5em;font-weight:normal}
-#content ul li {margin:0 0 5px 20px;list-style:disc;font-size:1.3em;font-weight:normal}
-#content ol li {margin:0 0 5px 20px;list-style:decimal;font-size:1.3em;font-weight:normal}
-li li,p li, li p, li h3, li h4 {font-size:1em}
-#content ul, #content ol {margin:0 0 20px 0}
-#content a img {border:double 6px #003c7f;margin:3px 0 20px 0;height:auto;}
+h1, h2 {
+  font-size: 4em
+}
+
+h3 {
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-size: 2.3em;
+  font-weight: bold;
+  margin-bottom: 5px
+}
+
+p, #content li {
+  font-family: 'Lucida Sans', Tahoma, sans-serif
+}
+
+p, label {
+  margin: 0 0 20px;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-weight: normal
+}
+
+#content ul li {
+  margin: 0 0 5px 20px;
+  list-style: disc;
+  font-size: 1.3em;
+  font-weight: normal
+}
+
+#content ol li {
+  margin: 0 0 5px 20px;
+  list-style: decimal;
+  font-size: 1.3em;
+  font-weight: normal
+}
+
+li li, p li, li p, li h3, li h4 {
+  font-size: 1em
+}
+
+#content ul, #content ol {
+  margin: 0 0 20px 0
+}
+
+#content a img {
+  border: double 6px #003c7f;
+  margin: 3px 0 20px 0;
+  height: auto;
+}
+
 .home #content a img {}
-input {padding:10px;font-size:1em}
 
-a {text-decoration:none}
-a:link {color:#003c7f}
-a:visited {color:#3b47f7}
-#main a:hover {color:#003c7f;text-decoration:underline}
+input {
+  padding: 10px;
+  font-size: 1em
+}
 
+a {
+  text-decoration: none
+}
 
-blockquote {padding:10px 10px 0px 20px;margin:5px 0 10px;border-left:6px double #bbb;color:#666;background:#eee;font-style:italic;}
-code {font-family:monospace;background:#cbd7f7;padding:0 4px}
-pre code {padding:10px;font-size:1.5em;display:block;display:block;margin:5px 0 20px;border-left:6px double #003c7f}
+a:link {
+  color: #003c7f
+}
+
+a:visited {
+  color: #3b47f7
+}
+
+#main a:hover {
+  color: #003c7f;
+  text-decoration: underline
+}
+
+blockquote {
+  padding: 10px 10px 0px 20px;
+  margin: 5px 0 10px;
+  border-left: 6px double #bbb;
+  color: #666;
+  background: #eee;
+  font-style: italic;
+}
+
+code {
+  font-family: monospace;
+  background: #cbd7f7;
+  padding: 0 4px
+}
+
+pre code {
+  padding: 10px;
+  font-size: 1.5em;
+  display: block;
+  display: block;
+  margin: 5px 0 20px;
+  border-left: 6px double #003c7f
+}
 
 /* LAYOUT */
 /* ----------------------------------------- */
-
 /* These rather presentational classes are generated by WordPress, so it's useful to have some styles for them. Edit as you see fit. More info: http://codex.wordpress.org/CSS */
+#content a img.alignleft {
+  float: left;
+  margin-right: 15px;
+  margin-left: 0;
+  margin-top: 10px
+}
 
-#content a img.alignleft { float:left;margin-right:15px;margin-left:0;margin-top:10px }
-#content a img.alignright { float:right;margin-left:15px;margin-right:0;margin-top:10px }
-#content a img.aligncenter { margin:auto;display:block;width: 100%;}
-.wp-caption { border:1px solid #666; text-align:center; background:#ccc; padding:10px; margin:10px }
+#content a img.alignright {
+  float: right;
+  margin-left: 15px;
+  margin-right: 0;
+  margin-top: 10px
+}
 
-img.size-full {max-width: 100%; height: auto;width: 100%;}
+#content a img.aligncenter {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
 
-.post-edit-link , .continuereading {background:#ececec;padding:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;font-size:80%;right:0px;bottom:-10px;font-weight:bold}
-.continuereading {position:relative}
-.meta {font-style:italic; color:#666}
+.wp-caption {
+  border: 1px solid #666;
+  text-align: center;
+  background: #ccc;
+  padding: 10px;
+  margin: 10px
+}
 
-.clear { clear:both; } /* Use this br class to clear your floated columns */
+img.size-full {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
 
-body {background:#fff;font:300 62.5% 'Yanone Kaffeesatz', sans-serif;color:#333;}
+.post-edit-link, .continuereading {
+  background: #ececec;
+  padding: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 80%;
+  right: 0px;
+  bottom: -10px;
+  font-weight: bold
+}
 
+.continuereading {
+  position: relative
+}
+
+.meta {
+  font-style: italic;
+  color: #666
+}
+
+.clear {
+  clear: both;
+}
+
+/* Use this br class to clear your floated columns */
+body {
+  background: #fff;
+  font: 300 62.5% 'Yanone Kaffeesatz', sans-serif;
+  color: #333;
+}
 
 /*NEW BLUE COLOR #003c7f;*/
 /*OLD BLUE COLOR #3b4767;*/
-
-
-#main {  margin-bottom: 20px}
-
-
-
-/*header*/
-#header {margin:20px 0 0;height:145px;overflow:hidden}
-#header h1 a {color:#fff;display:block;width:186px;height:140px;float:left;background:url("images/h1-b.jpg") no-repeat;background-size:140px;text-indent:-9999px;}
-/*menu*/
-
-#header  ul {text-align:right;margin:16px 0 0}
-#header  ul li {display:inline-block;}
-#header  ul li a {padding: 10px 10px;font-weight:bold;font-size:2em;display: inline-block;}
-#header a:link, #header a:visited {color:#003c7f}
-#header a:hover {color:#003c7f}
-
-@media (min-width: 768px) {
-    #header ul {
-        width:700px;float:right;
-    }
+#main {
+  margin-bottom: 20px
 }
 
+header {
+  position: relative
+}
 
+header nav {
+  background: white;
+  border-bottom: 4px solid #005d9a;
+  padding: 0;
+  height: 100px;
+  font-family: "Baloo Tammudu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-transform: uppercase
+}
 
-#feature img {padding:3px;border:4px solid #003c7f;margin:0 0 20px }
+header nav ul {
+  padding: 0;
+  margin: 0
+}
 
+header nav ul li {
+  padding: 0;
+  margin: 0;
+  display: block
+}
 
-.post {margin: 20px 0 0 ;border-bottom:1px dotted #ddd}
+header nav ul li a {
+  display: block;
+  padding: 20px;
+  border: 0;
+  border-radius: 0
+}
 
+header nav ul li a:link, header nav ul li a:visited, header nav ul li a:active {
+  color: white;
+  border: 0
+}
 
+header nav ul li a:hover {
+  background-color: #003e67
+}
 
-#map {border:3px solid #ececec;margin: 0 0 20px;width:286px;padding:2px}
+header nav ul li a.branding {
+  text-indent: -9999px;
+  background: url("images/h1-b.jpg") no-repeat left center;
+  background-size: 190px;
+  width: 190px;
+  height: 100px
+}
 
-#nextconcert, #latestnews {background:#ececec;margin:-3px 0 20px;padding:15px 0;border:7px double white;position:relative}
-#nextconcert h4 {margin:0 15px 10px 69px}
-#nextconcert p {font-size:1.3em;margin-left:69px;margin-right:15px}
-#nextconcert strong {font-size:1.1em;line-height:1.3em;}
+header nav ul li a.branding:hover {
+  background-color: transparent;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05)
+}
 
-#calendar {position:absolute;top:54px;left:10px;width:48px;height:54px;background:url("images/calendar2.png") no-repeat;}
-#calendar p {margin:0;text-align:center}
-#calendar .day, #calendar .month {font-size:1.7em;font-weight:bold;color:#777;position:relative;top:17px;display:block}
-#calendar .month {top:16px;font-size:0.8em;text-transform:uppercase;letter-spacing:2px}
+#navigation_menu {
+  display: none;
+  position: fixed;
+  background: rgba(0, 93, 154, 0.92);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding-top: 20px
+}
 
+#navigation_menu.menu_visible {
+  display: block;
+  z-index: 100
+}
+
+#menu_button {
+  display: inline-block;
+  background: url("images/menu.svg") no-repeat center center;
+  background-size: 30px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  text-indent: -9999px;
+  z-index: 301;
+  top: 10px;
+  right: 10px;
+  margin: 0;
+  border: 0
+}
+
+@media (min-width: 768px) {
+  #menu_button {
+    display: none
+  }
+
+  #navigation_menu {
+    text-align: right;
+    position: static;
+    background: none;
+    display: block;
+    padding: 0
+  }
+
+  #navigation_menu a {
+    padding: 20px 20px 0
+  }
+
+  #navigation_menu a:link, #navigation_menu a:visited, #navigation_menu a:active {
+    color: #005d9a
+  }
+
+  #navigation_menu a:hover {
+    color: white;
+    background-color: #005d9a;
+    border: 0;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px)
+  }
+
+  header nav ul li {
+    display: inline-block
+  }
+
+  header nav ul li a {
+    display: inline-block;
+    line-height: 100px
+  }
+}
+
+.blurred_body {
+  -webkit-filter: blur(3px);
+  filter: blur(3px)
+}
+
+#feature img {
+  padding: 3px;
+  border: 4px solid #003c7f;
+  margin: 0 0 20px
+}
+
+.post {
+  margin: 20px 0 0;
+  border-bottom: 1px dotted #ddd
+}
+
+#map {
+  border: 3px solid #ececec;
+  margin: 0 0 20px;
+  width: 286px;
+  padding: 2px
+}
+
+#nextconcert, #latestnews {
+  background: #ececec;
+  margin: -3px 0 20px;
+  padding: 15px 0;
+  border: 7px double white;
+  position: relative
+}
+
+#nextconcert h4 {
+  margin: 0 15px 10px 69px
+}
+
+#nextconcert p {
+  font-size: 1.3em;
+  margin-left: 69px;
+  margin-right: 15px
+}
+
+#nextconcert strong {
+  font-size: 1.1em;
+  line-height: 1.3em;
+}
+
+#calendar {
+  position: absolute;
+  top: 54px;
+  left: 10px;
+  width: 48px;
+  height: 54px;
+  background: url("images/calendar2.png") no-repeat;
+}
+
+#calendar p {
+  margin: 0;
+  text-align: center
+}
+
+#calendar .day, #calendar .month {
+  font-size: 1.7em;
+  font-weight: bold;
+  color: #777;
+  position: relative;
+  top: 17px;
+  display: block
+}
+
+#calendar .month {
+  top: 16px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px
+}
 
 /*footer*/
-#footer {margin:30px 0; padding: 10px 0; border-top:3px double #ccc}
-#footer p {width:50%;float:left;font-size:1.1em}
+#footer {
+  margin: 30px 0;
+  padding: 10px 0;
+  border-top: 3px double #ccc
+}
 
-#wpstats {display:none}
+#footer p {
+  width: 50%;
+  float: left;
+  font-size: 1.1em
+}
 
-
-
-
-
-
+#wpstats {
+  display: none
+}
 
 /* =Comments
 -------------------------------------------------------------- */
-#comments{clear:both;}
-#comments .navigation{padding:0 0 18px}
-#comments h3 {font-size:2.4em;margin-bottom:20px}
-#comments li h3 {font-size:1em}
-#comments .commentlist li.comment{border-bottom:1px solid #e7e7e7;line-height:24px;position:relative;margin:0 0 24px;padding:0 0 0 56px}
-.commentlist li:last-child{border-bottom:none;margin-bottom:0}
-#comments .comment-body ul,#comments .comment-body ol{margin-bottom:18px}
-#comments .comment-body p:last-child{margin-bottom:6px}
-#comments .comment-body blockquote p:last-child{margin-bottom:24px}
-.commentlist ol{list-style:decimal}
-.commentlist .avatar{position:absolute;top:4px;left:0}
- .comment-author cite{font-style:normal;font-size:120%;font-weight:bold}
-#comments li li  {font-size:1em}
-.comment-author .says{font-style:italic}
-.comment-meta{margin-top:-5px;font-size:0.85em}
-.comment-meta a:link,.comment-meta a:visited{text-decoration:none}
-.reply{padding:0 0 24px}
-.reply a,a.comment-edit-link{color:#888;}
-.nopassword,.nocomments{display:none}
-#comments .pingback{border-bottom:1px solid #e7e7e7;margin-bottom:18px;padding-bottom:18px}
-#comments .commentlist li.comment+li.pingback{margin-top:-6px}
-#comments .pingback p{color:#888;display:block;margin:0}
-#comments .pingback .url{font-style:italic}
-#comments label{display:block;font-size:1em;width:100px;float:left}
-.commentlist,.commentlist .children{list-style:none;margin:0}
-#comments .comment-subscription-form label {width:400px;}
+#comments {
+  clear: both;
+}
+
+#comments .navigation {
+  padding: 0 0 18px
+}
+
+#comments h3 {
+  font-size: 2.4em;
+  margin-bottom: 20px
+}
+
+#comments li h3 {
+  font-size: 1em
+}
+
+#comments .commentlist li.comment {
+  border-bottom: 1px solid #e7e7e7;
+  line-height: 24px;
+  position: relative;
+  margin: 0 0 24px;
+  padding: 0 0 0 56px
+}
+
+.commentlist li:last-child {
+  border-bottom: none;
+  margin-bottom: 0
+}
+
+#comments .comment-body ul, #comments .comment-body ol {
+  margin-bottom: 18px
+}
+
+#comments .comment-body p:last-child {
+  margin-bottom: 6px
+}
+
+#comments .comment-body blockquote p:last-child {
+  margin-bottom: 24px
+}
+
+.commentlist ol {
+  list-style: decimal
+}
+
+.commentlist .avatar {
+  position: absolute;
+  top: 4px;
+  left: 0
+}
+
+.comment-author cite {
+  font-style: normal;
+  font-size: 120%;
+  font-weight: bold
+}
+
+#comments li li {
+  font-size: 1em
+}
+
+.comment-author .says {
+  font-style: italic
+}
+
+.comment-meta {
+  margin-top: -5px;
+  font-size: 0.85em
+}
+
+.comment-meta a:link, .comment-meta a:visited {
+  text-decoration: none
+}
+
+.reply {
+  padding: 0 0 24px
+}
+
+.reply a, a.comment-edit-link {
+  color: #888;
+}
+
+.nopassword, .nocomments {
+  display: none
+}
+
+#comments .pingback {
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 18px;
+  padding-bottom: 18px
+}
+
+#comments .commentlist li.comment+li.pingback {
+  margin-top: -6px
+}
+
+#comments .pingback p {
+  color: #888;
+  display: block;
+  margin: 0
+}
+
+#comments .pingback .url {
+  font-style: italic
+}
+
+#comments label {
+  display: block;
+  font-size: 1em;
+  width: 100px;
+  float: left
+}
+
+.commentlist, .commentlist .children {
+  list-style: none;
+  margin: 0
+}
+
+#comments .comment-subscription-form label {
+  width: 400px;
+}
