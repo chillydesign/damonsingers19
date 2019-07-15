@@ -168,7 +168,6 @@ h1, h2 {
 h3 {
   font-size: 3em;
   font-weight: bold;
-  letter-spacing: 1px;
 }
 
 h4 {
@@ -532,12 +531,12 @@ header nav ul li a.branding:hover {
   font-weight: bold;
   color: #777;
   position: relative;
-  top: 14px;
+  top: 13px;
   display: block
 }
 
 #calendar .month {
-  top: 11px;
+  top: 4px;
   font-size: 0.8em;
   text-transform: uppercase;
   letter-spacing: 2px
