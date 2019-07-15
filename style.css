@@ -177,14 +177,12 @@ h4 {
   margin-bottom: 5px
 }
 
-p, #content li {
-  font-family: 'Lucida Sans', Tahoma, sans-serif
-}
+p, #content li {}
 
 p, label {
   margin: 0 0 20px;
-  font-size: 1.4em;
-  line-height: 1.5em;
+  font-size: 1.55em;
+  line-height: 1.75em;
   font-weight: normal
 }
 
@@ -360,8 +358,7 @@ header nav ul li {
   padding: 0;
   margin: 0;
   display: block;
-  font-size: 2em;
-  font-weight: bold;
+  font-size: 1.5em;
 }
 
 header nav ul li a {
@@ -443,7 +440,7 @@ header nav ul li a.branding:hover {
   }
 
   #navigation_menu a {
-    padding: 10px 13px;
+    padding: 10px;
   }
 
   #navigation_menu a:link, #navigation_menu a:visited, #navigation_menu a:active {
@@ -507,7 +504,6 @@ header nav ul li a.branding:hover {
 }
 
 #nextconcert p {
-  font-size: 1.3em;
   margin-left: 69px;
   margin-right: 15px
 }
@@ -536,12 +532,12 @@ header nav ul li a.branding:hover {
   font-weight: bold;
   color: #777;
   position: relative;
-  top: 17px;
+  top: 14px;
   display: block
 }
 
 #calendar .month {
-  top: 16px;
+  top: 11px;
   font-size: 0.8em;
   text-transform: uppercase;
   letter-spacing: 2px
