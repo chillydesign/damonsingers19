@@ -634,7 +634,7 @@ function webfactor_styles()
     wp_dequeue_style('wp-block-library');
 
 
-    wp_register_style('g_font', 'https://fonts.googleapis.com/css?family=Heebo:300,700&display=swap', array(), 1, 'all');
+    wp_register_style('g_font', 'https://fonts.googleapis.com/css?family=Heebo:300,500&display=swap', array(), 1, 'all');
     wp_enqueue_style('g_font'); // Enqueue it!
 
     wp_register_style('wf_style', get_template_directory_uri() . '/style.css', array(), wf_version(), 'all');
