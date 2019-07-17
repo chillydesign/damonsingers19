@@ -26,7 +26,6 @@ fieldset, img {
 
 address, caption, cite, code, dfn, em, strong, th, var {
   font-style: normal;
-  font-weight: normal
 }
 
 ol, ul, li {
@@ -172,21 +171,18 @@ p, label {
   margin: 0 0 20px;
   font-size: 1.65em;
   line-height: 1.85em;
-  font-weight: normal
 }
 
 #content ul li {
   margin: 0 0 5px 20px;
   list-style: disc;
   font-size: 1.3em;
-  font-weight: normal
 }
 
 #content ol li {
   margin: 0 0 5px 20px;
   list-style: decimal;
   font-size: 1.3em;
-  font-weight: normal
 }
 
 li li, p li, li p, li h3, li h4 {
