@@ -673,10 +673,41 @@ header nav ul li a.branding:hover {
 }
 
 .slick_slider {
-  margin: 40px 0;
+  margin: 20px 0 25px;
 }
 
 .slick_slider img {
   width: 100%;
   height: auto;
+}
+
+ul.slick-dots {
+  text-align: center;
+}
+
+ul.slick-dots li {
+  margin: 0;
+  display: inline-block;
+  list-style: none;
+}
+
+ul.slick-dots li button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 0;
+  background: #f1f1f1;
+  text-indent: -9999px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 11px 3px 0;
+  padding: 3px;
+  cursor: pointer;
+  outline: 0;
+}
+
+ul.slick-dots li button:hover {
+  background: #bbb;
 }
