@@ -37,9 +37,7 @@ get_header(); ?>
 		<?php if ($slider) : ?>
 			<div class="slick_slider">
 			<?php foreach ($slider as $image) : ?>
-
-			<img title="<?php echo $image['name']; ?>" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['name']; ?>"  />
-
+			<img title="<?php echo $image['name']; ?>" src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['name']; ?>"  />
 			<?php endforeach; ?>
 			</div>
 		<?php endif; ?>
