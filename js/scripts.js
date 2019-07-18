@@ -13,6 +13,7 @@
       slidesToShow: 1,
       adaptiveHeight: true,
       dots: true,
+      fade: true,
       arrows: false,
       autoplay: true,
       autoplaySpeed: 8000, // time spent on one slide
