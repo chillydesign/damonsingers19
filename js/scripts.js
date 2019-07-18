@@ -13,7 +13,8 @@
       slidesToShow: 1,
       adaptiveHeight: true,
       dots: true,
-      arrows: false
+      arrows: false,
+      autoplay: true
     });
 
 
