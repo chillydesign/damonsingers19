@@ -671,3 +671,12 @@ header nav ul li a.branding:hover {
 #comments .comment-subscription-form label {
   width: 400px;
 }
+
+.slick_slider {
+  margin: 40px 0;
+}
+
+.slick_slider img {
+  width: 100%;
+  height: auto;
+}

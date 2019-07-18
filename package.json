@@ -1,0 +1,25 @@
+{
+  "name": "damonsingers19",
+  "version": "1.0.0",
+  "description": "Damon Singers Wordpress Theme 19",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chillydesign/damonsingers19.git"
+  },
+  "keywords": [
+    "wordpress"
+  ],
+  "author": "Charles Harvey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chillydesign/damonsingers19/issues"
+  },
+  "homepage": "https://github.com/chillydesign/damonsingers19#readme",
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  }
+}

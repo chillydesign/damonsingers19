@@ -6,6 +6,11 @@
     'use strict';
 
 
+
+
+    $('.slick_slider').slick();
+
+
     var $blurrable = $('#main, .branding');
     var $navigation_menu = $('#navigation_menu');
     var $menu_button = $('#menu_button');
