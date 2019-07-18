@@ -8,7 +8,13 @@
 
 
 
-    $('.slick_slider').slick();
+    $('.slick_slider').slick({
+      infinite: true,
+      slidesToShow: 1,
+      adaptiveHeight: true,
+      dots: true,
+      arrows: false
+    });
 
 
     var $blurrable = $('#main, .branding');
