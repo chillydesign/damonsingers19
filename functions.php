@@ -622,7 +622,7 @@ add_action('after_setup_theme', 'remove_json_api');
 
 function wf_version()
 {
-    return '0.0.8';
+    return '0.0.9';
 }
 
 
