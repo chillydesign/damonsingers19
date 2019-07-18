@@ -14,7 +14,8 @@
       adaptiveHeight: true,
       dots: true,
       arrows: false,
-      autoplay: true
+      autoplay: true,
+      autoplaySpeed: 8000
     });
 
 
