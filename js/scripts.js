@@ -15,7 +15,8 @@
       dots: true,
       arrows: false,
       autoplay: true,
-      autoplaySpeed: 8000
+      autoplaySpeed: 8000, // time spent on one slide
+      speed: 600 // time to change slide
     });
 
 
