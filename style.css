@@ -176,13 +176,13 @@ p, label {
 #content ul li {
   margin: 0 0 5px 20px;
   list-style: disc;
-  font-size: 1.3em;
+  font-size: 1.65em;
 }
 
 #content ol li {
   margin: 0 0 5px 20px;
   list-style: decimal;
-  font-size: 1.3em;
+  font-size: 1.65em;
 }
 
 li li, p li, li p, li h3, li h4 {
